@@ -8,19 +8,19 @@ public class ProjectA {
 		Process process;
 		Output out;
 		
-		System.out.print("ID: ");
+		System.out.print("ID : ");
 		String id = input.inString();
-		System.out.print("Name: ");
+		System.out.print("Name : ");
 		String name = input.inString();
-		System.out.print("Salary: ");
+		System.out.print("Salary : ");
 		double salary = in.nextInt();
-		System.out.print("Compensation: ");
+		System.out.print("Compensation : ");
 		double compensation = in.nextInt();
 		System.out.println("--------------------------------------");
 		
 		out = new Output(id,name);
 		process = new Process(id,salary,compensation);
-		System.out.println("Total Salary: " + process.compensation());
+		System.out.println("Total Salary : " + process.compensation());
 		//System.out.println(out);
 	}
 
