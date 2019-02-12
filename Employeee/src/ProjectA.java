@@ -16,7 +16,7 @@ public class ProjectA {
 		double salary = in.nextInt();
 		System.out.print("Compensation : ");
 		double compensation = in.nextInt();
-		System.out.println("--------------++++----");
+		System.out.println("---------------------");
 		
 		out = new Output(id,name);
 		process = new Process(id,salary,compensation);

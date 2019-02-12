@@ -24,16 +24,13 @@ public class Process {
         	total = this.compensation*0.10;
         	total = this.salary + total;
         }
-		return total;
-	}
-	public double total(double total) {
-		if(total<20000) {
-        	total = 20000;
-		}else {
-			total = total+0;	
-		}
-		return total;
 		
+		if(this.salary < 15000) {
+			if(this.compensation > 100001 ) {
+				total = total + 5000;
+			}
+		}
+		return total;		
 	}
 	
 }
