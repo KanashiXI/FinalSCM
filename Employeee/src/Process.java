@@ -16,16 +16,24 @@ public class Process {
 	
 	public double compensation() {
 		double total = 0;
-		if(this.compensation<100000) {
+		if(this.compensation<50000) {
 			total = this.compensation*0.05;
 			total = this.salary + total;
 		}
-        else if (this.compensation>100001){
+        else if (this.compensation>50001){
         	total = this.compensation*0.10;
         	total = this.salary + total;
         }
-		
 		return total;
+	}
+	public double total(double total) {
+		if(total<20000) {
+        	total = 20000;
+		}else {
+			total = total+0;	
+		}
+		return total;
+		
 	}
 	
 }
